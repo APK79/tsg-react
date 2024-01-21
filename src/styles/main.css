@@ -38,6 +38,12 @@ h3{
 .nav {
 
 }
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
   @media screen and (max-width: 480px) {
     html{
         font-size: 50%;
