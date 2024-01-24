@@ -3,7 +3,7 @@ import "./style.css";
 import locPin from "../img/icons/location.svg";
 import secCam from "../img/icons/sec_cam.svg";
 import newsImg from "../img/pic/news/ny2024_1-5.jpg";
-
+import Slider from "../components/slider/Slider.js";
 
 const TextRing = ({children, side, image}) => {
 
@@ -138,6 +138,14 @@ const Main = () => {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="main-gallery">
+          <div className="main-gallery-full-size">
+            <div className="container">
+              <Slider />
             </div>
           </div>
         </div>
