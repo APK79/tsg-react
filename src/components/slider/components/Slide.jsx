@@ -1,6 +1,6 @@
 import React from "react";
-import SlideTitle from "./SlideTitle.js";
-import SlideImage from "./SlideImage";
+import SlideTitle from "./SlideTitle.jsx";
+import SlideImage from "./SlideImage.jsx";
 
 import "./../style.css";
 

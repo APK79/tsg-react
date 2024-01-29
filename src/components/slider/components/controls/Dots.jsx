@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { SliderContext } from "../../Slider";
-import Dot from "./Dot";
+import { SliderContext } from "../../Slider.jsx";
+import Dot from "./Dot.jsx";
 import { useResize } from "../../../../hooks/useResize/useResize.js";
 
 import "../../style.css";

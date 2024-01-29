@@ -106,13 +106,13 @@ div.main-header__item__info__btn{
     padding: .5rem;
 }
 div.main-header__item__info a:first-child{
-    background-image: url("../img/pic/water-meter.jpg");
+    background-image: url("../../img/pic/water-meter.jpg");
 }
 div.main-header__item__info a:nth-child(2){
-    background-image: url("../img/pic/online-pay.jpg");
+    background-image: url("../../img/pic/online-pay.jpg");
 }
 div.main-header__item__info a:last-child{
-    background-image: url("../img/pic/letter.jpg");
+    background-image: url("../../img/pic/letter.jpg");
 }
 div.main-header__item__info__btn-inner {
     margin: 0 0 5% 0;
@@ -142,16 +142,16 @@ li.main-info__box-list__item div.main-info__box-list__item__info-img{
     transition: all 0.3s ease-in-out;
 }
 li.main-info__box-list__item:nth-child(1) .main-info__box-list__item__info-img{
-    background-image: url("../img/icons/assembly.svg");
+    background-image: url("../../img/icons/assembly.svg");
 }
 li.main-info__box-list__item:nth-child(2) .main-info__box-list__item__info-img{
-    background-image: url("../img/icons/lifebuoy.svg");
+    background-image: url("../../img/icons/lifebuoy.svg");
 }
 li.main-info__box-list__item:nth-child(3) .main-info__box-list__item__info-img{
-    background-image: url("../img/icons/phone_book.svg");
+    background-image: url("../../img/icons/phone_book.svg");
 }
 li.main-info__box-list__item:nth-child(4) .main-info__box-list__item__info-img{
-    background-image: url("../img/icons/call_prim.svg"); 
+    background-image: url("../../img/icons/call_prim.svg"); 
 }
 li.main-info__box-list__item:hover div.main-info__box-list__item__info-head{
     color: var(--dark-green);
@@ -209,7 +209,7 @@ li.main-about-home__item {
 }
 div.main-about-home__item__container{
     position: relative;
-    background-image: url("../img/pic/14k5.jpg");
+    background-image: url("../../img/pic/14k5.jpg");
     background-repeat: no-repeat;
     width: 100%;
     min-height: clamp(20rem, 45vw, 60rem);
@@ -242,7 +242,7 @@ div.main-about-home__item__top-white-box {
     z-index: 1;
 }
 .main-about-home__item__container__phone-img{
-    background-image: url("../img/icons/phone_call.svg");
+    background-image: url("../../img/icons/phone_call.svg");
     background-repeat: no-repeat;
     width: 6.9rem;
     height: 6.9rem;

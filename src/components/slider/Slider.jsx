@@ -3,10 +3,10 @@ import React, { useEffect, useState, createContext } from 'react';
 import PropTypes from "prop-types";
 import images from "./gallery.json";
 
-import Arrows from "./components/controls/Arrows.js";
-import Dots from "./components/controls/Dots.js";
+import Arrows from "./components/controls/Arrows.jsx";
+import Dots from "./components/controls/Dots.jsx";
 
-import SlidesList from "./components/SlidesList.js";
+import SlidesList from "./components/SlidesList.jsx";
 import { useResize } from "../../hooks/useResize/useResize.js";
 
 export const SliderContext = createContext();
@@ -125,53 +125,4 @@ Slider.defaultProps = {
   height: "100%"
 };
 
-
-/*
-const Slider = () => {
-    const [pictureList, setPictureList] = useState(data);
-    const [currentIndex, setCurrentIndex] = useState(0);
-    
-    const list = pictureList.map((picture, pictureIndex) => {
-        const {id, image, alt, query} = picture;
-
-        let position = "slide"
-
-        if(pictureIndex === currentIndex) position = 'activeSlide'
-        if(pictureIndex - 1 === currentIndex) position = 'nextSlide'
-        if(pictureIndex + 1 === currentIndex) position = 'prevSlide'
-        if(pictureIndex === pictureList.length - 1 && currentIndex === 0) position = 'prevSlide'
-        if(pictureIndex === 0 && currentIndex === pictureList.length - 1) position = 'nextSlide'
-        //if(pictureIndex === currentIndex - 1 || (currentIndex === 0 && pictureIndex === pictureList.length - 1)) position = 'lastslide'
-            
-        return (
-            <li className={position} key={id}>
-                <img src={image} alt={alt} title={query} />
-            </li>
-        ) 
-    })
-
-    useEffect(()=> {
-        const lastSlide = pictureList.length - 1;
-        if (currentIndex < 0) setCurrentIndex(lastSlide)
-        if (currentIndex > lastSlide) setCurrentIndex(0)
-    }, [currentIndex, pictureList]
-    )
-    
-
-
-    return (
-        <div className="slider">
-            <div className="slider-list">
-                <ul className="slider-track">
-                    {list}
-                 </ul>
-            </div>
-            <div className="slider-arrows">
-                <button type="button" className="prev" onClick={() => setCurrentIndex(prevState => prevState - 1)}> &larr; </button>
-                <button type="button" className="next" onClick={() => setCurrentIndex(prevState => prevState + 1)}> &rarr; </button>
-            </div>
-      </div>
-    );
-  }
-  */
   export default Slider;

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import Slide from "./Slide.js";
-import { SliderContext } from "../Slider.js";
+import Slide from "./Slide.jsx";
+import { SliderContext } from "../Slider.jsx";
 import { useResize } from "../../../hooks/useResize/useResize.js";
 
 import "../style.css";

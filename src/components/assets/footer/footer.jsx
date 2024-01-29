@@ -1,5 +1,5 @@
 import "./style.css";
-import { ReactComponent as FooterLogo } from '../img/logo.svg';
+import { ReactComponent as FooterLogo } from '../../img/logo.svg';
 
 const HowYear = () => {
     return (

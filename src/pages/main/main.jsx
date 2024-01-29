@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import "./style.css";
-import locPin from "../img/icons/location.svg";
-import secCam from "../img/icons/sec_cam.svg";
-import newsImg from "../img/pic/news/ny2024_1-5.jpg";
-import Slider from "../components/slider/Slider.js";
+import locPin from "../../components/img/icons/location.svg";
+import secCam from "../../components/img/icons/sec_cam.svg";
+import newsImg from "../../components/img/pic/news/ny2024_1-5.jpg";
+import Slider from "../../components/slider/Slider.jsx";
 
 const TextRing = ({children, side, image}) => {
 

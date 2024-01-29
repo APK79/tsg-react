@@ -1,6 +1,6 @@
 import "./style.css";
-import { ReactComponent as HeaderLogoImg } from '../img/logo.svg';
-import Navbar from '../navbar/navbar.js';
+import { ReactComponent as HeaderLogoImg } from '../../img/logo.svg';
+import Navbar from '../navbar/navbar.jsx';
 
 const Header = () => {
     return (
