@@ -7,7 +7,7 @@ const Header = () => {
         <header>
             <div className="container">
                 <div className="header">
-                    <div className="header-row">
+                    <div className="header-logo-wrapper">
                         <a href="./app.js" className="header-logo-link">
                             <HeaderLogoImg />
                             <ul className="logo"> 

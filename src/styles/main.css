@@ -23,7 +23,7 @@ html{
 .container{
     margin: 0 auto;
     padding: 0 1.5rem;
-    max-width: 143rem;
+    width: clamp(102.4rem, 95vw, 147rem);
 }
 h1{
     font-size: 2.5rem;
@@ -44,11 +44,27 @@ h3{
 .text-right{
     text-align: right;
 }
-  @media screen and (max-width: 480px) {
+/*@media screen and (max-width: 1430px) {
+    .container {
+      max-width: 128rem;
+    }
+}*/
+@media screen and (max-width: 1024px) {
+    .container {
+      padding: 0 1rem;
+      width: 100%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .container {
+      padding: 0;
+    }
+}
+@media screen and (max-width: 480px) {
     html{
         font-size: 50%;
     }
     .d-none-xs {
         display: none !important;
     }
-  }
+}

@@ -7,7 +7,7 @@ import Arrows from "./components/controls/Arrows.js";
 import Dots from "./components/controls/Dots.js";
 
 import SlidesList from "./components/SlidesList.js";
-import { useResize } from "./components/resize.js";
+import { useResize } from "../../hooks/useResize/useResize.js";
 
 export const SliderContext = createContext();
 

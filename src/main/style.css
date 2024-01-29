@@ -180,6 +180,10 @@ a.main-info__box-list__item__info-url {
     height: 100%;
 }
 
+/* gallery*/
+.main-gallery-full-size{
+    padding: 0 0 2rem 0;
+}
 /* about home */
 div.main-about-home{
     position: relative;
@@ -431,6 +435,7 @@ div.main-about-home__grid__item:nth-child(odd){
     li.main-header__item, li.main-about-home__item {
         max-width: 100%;
         flex-direction: column;
+        padding: 0 0.5rem;
     }
     div.main-about-home__item__sec-cam div.main-about-home__item__render{
         bottom: 5%;
@@ -502,13 +507,27 @@ div.main-about-home__grid__item:nth-child(odd){
         font-size: clamp(0.85rem, .7vw, 1.2rem);
         padding: 2rem 1rem;
     }
-    .main-about-home__item__container__phone{
-        position: relative;
-        top: unset;
-        right: unset;
+    .main-about-home__item__container__phone {
+        align-items: center;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        min-width: 24rem;
+        max-width: 25rem;
+        padding: 1rem 2.5rem;
     }
-    .main-header-full-size {
-        padding: 1.6rem 0;
+    .main-about-home__item__container__phone span {
+        font-size: 0.85rem;
+    }
+    .main-about-home__item__container__phone p {
+        font-size: 1.2rem;    
+    }
+    .main-about-home__item__container__phone-img {
+        width: 5rem;
+        height: 5rem;
+    }
+    div.main-header-full-size {
+        padding: 1rem 0 3rem 0;
     }
     div.main-about-home__item__sec-cam div.main-about-home__item__render {
         padding: 2.1rem;

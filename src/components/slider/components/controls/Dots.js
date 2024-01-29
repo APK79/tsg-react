@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { SliderContext } from "../../Slider";
 import Dot from "./Dot";
-import { useResize } from "../resize.js";
+import { useResize } from "../../../../hooks/useResize/useResize.js";
 
 import "../../style.css";
 
