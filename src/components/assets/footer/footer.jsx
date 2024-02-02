@@ -1,5 +1,5 @@
 import "./style.css";
-import { ReactComponent as FooterLogo } from '../../img/logo.svg';
+import Logo from '../../reused/logo/logo.jsx';
 
 const HowYear = () => {
     return (
@@ -15,7 +15,7 @@ const Footer = () => {
                         <div className="footer-wrapper">
                             <div className="footer-logo">
                             <a href="./app.js" className="footer-logo-link">                                
-                                <div className="footer-logo-img"><FooterLogo /></div>
+                                <div className="footer-logo-img"><Logo /></div>
                                 <ul className="footer-logo-list"> 
                                     <li className="footer-logo-list__item"><b>Краснолесья</b><span>14<em>к</em>5</span></li>
                                     <li className="footer-logo-list__item">Товарищество собственников жилья</li>

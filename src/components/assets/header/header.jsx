@@ -1,5 +1,5 @@
 import "./style.css";
-import { ReactComponent as HeaderLogoImg } from '../../img/logo.svg';
+import Logo from '../../reused/logo/logo.jsx';
 import Navbar from '../navbar/navbar.jsx';
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
                 <div className="header">
                     <div className="header-logo-wrapper">
                         <a href="./app.js" className="header-logo-link">
-                            <HeaderLogoImg />
+                            <Logo />
                             <ul className="logo"> 
                                 <li className="logo__item"><b>Краснолесья</b><span>14<em>к</em>5</span></li>
                                 <li className="logo__item">Товарищество собственников жилья</li>

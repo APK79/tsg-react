@@ -6,9 +6,9 @@ export const useClickOutside = (ref, callback) => {
         if(ref.current && !ref.current.contains(e.target)) callback()
     };
     useEffect(() => {
-        document.addEventListener('mousedown', handleClick);
+        document.addEventListener('mouseup', handleClick);
         return () => {
-            document.removeEventListener('mousedown', handleClick);
+            document.removeEventListener('mouseup', handleClick);
         }
     });
 };

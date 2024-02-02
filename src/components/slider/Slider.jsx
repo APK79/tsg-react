@@ -1,7 +1,7 @@
 import "./style.css";
 import React, { useEffect, useState, createContext } from 'react';
 import PropTypes from "prop-types";
-import images from "./gallery.json";
+import images from "../../data/gallery.json";
 
 import Arrows from "./components/controls/Arrows.jsx";
 import Dots from "./components/controls/Dots.jsx";

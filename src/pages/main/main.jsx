@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import "./style.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import locPin from "../../components/img/icons/location.svg";
 import secCam from "../../components/img/icons/sec_cam.svg";
 import newsImg from "../../components/img/pic/news/ny2024_1-5.jpg";
@@ -56,7 +57,6 @@ const AppText = () => {
 const Main = () => {
     return (  
       <div className="main">
-
         <div className="main-header-full-size">
           <div className="container">
             <ul className="main-header">

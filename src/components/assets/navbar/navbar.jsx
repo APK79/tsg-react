@@ -1,5 +1,6 @@
 import "./style.css";
 import React, { useRef, useState } from 'react';
+import { Link, Router } from "react-router-dom";
 import { ReactComponent as MobileNavbarImg } from '../../img/icons/menu.svg';
 import { useClickOutside } from "../../../hooks/useClickOutside";
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
     
     const navMenuRef = useRef(null);
     useClickOutside(navMenuRef, () => {
-        if (isOpened) setTimeout (() => setIsOpened(false), 50);
+        if (isOpened) setTimeout (() => setIsOpened(false), 100);
     });
 
     return (
@@ -23,7 +24,7 @@ const Navbar = () => {
                             <MobileNavbarImg />
                         </button>
                     <ul className={`header-navbar__nav-list ${ addClassOpened() }`} ref={ navMenuRef }>
-                        <li className="header-navbar__nav-list__item"><a href="../pages/login/login.js" className="header-navbar__nav-list__link">О компании</a></li>
+                        <li className="header-navbar__nav-list__item"><a href="#!" className="header-navbar__nav-list__link">О нас</a></li>
                         <li className="header-navbar__nav-list__item"><a href="#!" className="header-navbar__nav-list__link">Новости</a></li>
                         <li className="header-navbar__nav-list__item"><a href="#!" className="header-navbar__nav-list__link">Информация</a></li>
                         <li className="header-navbar__nav-list__item"><a href="#!" className="header-navbar__nav-list__link">Контакты</a></li>
