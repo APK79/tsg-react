@@ -1,10 +1,14 @@
 import "./style.css";
 import React, { useRef, useState } from 'react';
-import { Link, Router } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ReactComponent as MobileNavbarImg } from '../../img/icons/menu.svg';
 import { useClickOutside } from "../../../hooks/useClickOutside";
+
 const Navbar = () => {
 
+    const activeLink = "header-navbar__nav-list__link--active"
+    const normalLink = "header-navbar__nav-list__link"
+    const getActive  = ({ isActive }) => isActive ? activeLink : normalLink
 
     const [isOpened, setIsOpened] = useState(false);
     
@@ -24,10 +28,10 @@ const Navbar = () => {
                             <MobileNavbarImg />
                         </button>
                     <ul className={`header-navbar__nav-list ${ addClassOpened() }`} ref={ navMenuRef }>
-                        <li className="header-navbar__nav-list__item"><a href="#!" className="header-navbar__nav-list__link">О нас</a></li>
-                        <li className="header-navbar__nav-list__item"><a href="#!" className="header-navbar__nav-list__link">Новости</a></li>
-                        <li className="header-navbar__nav-list__item"><a href="#!" className="header-navbar__nav-list__link">Информация</a></li>
-                        <li className="header-navbar__nav-list__item"><a href="#!" className="header-navbar__nav-list__link">Контакты</a></li>
+                        <li className="header-navbar__nav-list__item"><NavLink to="/about" className={ getActive }>О нас</NavLink></li>
+                        <li className="header-navbar__nav-list__item"><NavLink to="/newslist" className={ getActive }>Новости</NavLink></li>
+                        <li className="header-navbar__nav-list__item"><a href="#!" className="">Информация</a></li>
+                        <li className="header-navbar__nav-list__item"><a href="#!" className="">Контакты</a></li>
                     </ul>
                 </div>
             </div>

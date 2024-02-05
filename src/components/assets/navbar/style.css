@@ -12,6 +12,10 @@ ul.header-navbar__nav-list {
 .header-navbar__nav-list__link{
     color: var(--dark);
 }
+.header-navbar__nav-list__link--active {
+    border-bottom: 2px solid var(--accent);
+    color: currentcolor;
+}
 /* mobile button */
 .header-navbar__mobile-nav-list__icon {
     display: none;
