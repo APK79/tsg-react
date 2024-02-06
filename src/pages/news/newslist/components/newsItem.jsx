@@ -12,10 +12,10 @@ const NewsItem = ( { data: { id, author, title, description, url, urlToImage, pu
                 <NewsListImage src={urlToImage} alt={title}/>
                 <NewsPubliched at={publishedAt} />
                 <NewsTitle title={title} />
-                <NewsListButton data={{ id, author, title, description, url, urlToImage, publishedAt, content }} />
+                <NewsListButton id={id} />
             </div>
         </li>
     );
 }
 
-export default NewsItem;
+export default NewsItem

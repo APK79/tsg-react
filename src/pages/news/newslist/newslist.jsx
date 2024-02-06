@@ -1,10 +1,9 @@
-import React, { useEffect, useState, createContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import getList from "../../../data/news.json";
 import NewsItem from "./components/newsItem.jsx";
 import "./style.css";
 
-export const NewsContext = createContext();
 
 const NewsList = () => {
 
@@ -17,9 +16,6 @@ const NewsList = () => {
                     <div className="news-list__wrapper">
                         <h1>НОВОСТИ</h1>
                         <ul className="news-list__list">
-                           <NewsContext.Provider
-                                value={ list }>
-                            </NewsContext.Provider>
                             {list.slice().reverse().map((item) =>
                                 <NewsItem key={item.id} data={item} />
                             )}

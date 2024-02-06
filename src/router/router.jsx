@@ -6,23 +6,24 @@ import Main from '../pages/main/main.jsx';
 import About from '../pages/about/about.jsx';
 import NewsList from '../pages/news/newslist/newslist.jsx';
 import News from "../pages/news/news.jsx";
+import ErrorPage from "../pages/errorpage/errorpage.jsx";
 
 const Router = () => {
 function Layout() {
   return (
-      <>
+    <div className="App">
         <Header />
         <Outlet />
         <Footer />
         <ScrollRestoration />
-      </>
+      </div>
   );
 }
 
 const router = createBrowserRouter([
   {
     element: <Layout/>,
-    //errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [  
       {
         path: '/',
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
         element: <NewsList />
       },
       {
-        path: '/news',
+        path: '/news/:id',
         element: <News />
       }
     ]
