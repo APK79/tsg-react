@@ -23,7 +23,12 @@ const News= () => {
                  <div className="container">
                      <div className="news__wrapper">
                          <div className="news__list">
-                            {(content) ? content : false}
+                            <article className="news__list__title"><h1>{(title) ? title : false}</h1></article>
+                            <div className="news__list__img-wrapper">
+                                <img src={(urlToImage) ? urlToImage : false} alt={`${title} картинка`} />
+                                <span className="news__list__published-at">{(publishedAt) ? publishedAt : false}</span>
+                            </div>
+                            <div className="news__list__content">{(content) ? content : false}</div>
                          </div>
                      </div>
                  </div>

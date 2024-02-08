@@ -1,0 +1,28 @@
+article.news__list__title h1 {
+    font-weight: 700;
+    margin: 3rem 0;
+    text-align: center;
+}
+div.news__list__img-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+div.news__list__img-wrapper img {
+    width: 100%;
+}
+span.news__list__published-at {
+    position: absolute;
+    font-size: 120%;
+    bottom: 3%;
+    color: var(--light-grey);
+    z-index: 2;
+    left: 3%;
+}
+.news__list__content {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    padding: 3rem 0;
+    text-indent: 3rem;
+}
