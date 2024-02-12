@@ -6,6 +6,7 @@ import Main from '../pages/main/main.jsx';
 import About from '../pages/about/about.jsx';
 import NewsList from '../pages/news/newslist/newslist.jsx';
 import News from "../pages/news/news.jsx";
+import Contacts from "../pages/contacts/contacts.jsx";
 import ErrorPage from "../pages/errorpage/errorpage.jsx";
 
 const Router = () => {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: '/news/:id',
         element: <News />
+      },
+      {
+        path: '/contacts',
+        element: <Contacts />
       }
     ]
   }

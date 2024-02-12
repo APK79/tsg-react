@@ -1,6 +1,6 @@
 import "./style.css";
 import aboutImg from "../../components/img/pic/14k5_tsg.webp";
-import { ReactComponent as Wuser } from "../../components/img/icons/w_user.svg";
+import People from "../components/people";
 
 
 const About = () => {
@@ -46,51 +46,7 @@ const About = () => {
                         <div className="about-people">
                             <div className="about-people__head"> <h2>Люди - которые с Вами работают!</h2> </div>
                             <div className="about-people-wrapper">
-                                <div className="about-people__item">
-                                    <div className="about-people__item__img-wrapper">
-                                        <Wuser />
-                                        <div className="about-people__item__title">
-                                             <div className="about-people__item__title__company-post">
-                                                Председать ТСЖ
-                                            </div>
-                                            <div className="about-people__item__title__name">
-                                                Наталья Викторовна Гусева
-                                            </div>
-                                            <div className="about-people__item__title__work-time">
-                                                <p>Прием по вторникам</p> с 10-00 до 12-00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="about-people__item">
-                                    <div className="about-people__item__img-wrapper">
-                                        <Wuser />
-                                        <div className="about-people__item__title">
-                                        <div className="about-people__item__title__company-post">
-                                                Бухгалтер
-                                            </div>
-                                            <div className="about-people__item__title__name">
-                                                Ольга Петровна Осипова
-                                            </div>
-                                            <div className="about-people__item__title__work-time">
-                                                <p>Прием по вторникам </p>с 10-00 до 12-00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="about-people__item">
-                                    <div className="about-people__item__img-wrapper">
-                                        <Wuser />
-                                        <div className="about-people__item__title">
-                                        <div className="about-people__item__title__company-post">
-                                                Техник - смотритель
-                                            </div>
-                                            <div className="about-people__item__title__name">
-                                                Татьяна Федоровна Чубыкина
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <People />
                             </div>
                         </div>
                         <div className="about-phone">

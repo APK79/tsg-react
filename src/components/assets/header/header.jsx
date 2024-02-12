@@ -6,18 +6,20 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <header>
-            <div className="container">
-                <div className="header">
-                    <div className="header-logo-wrapper">
-                        <NavLink to="/" className="header-logo-link">
-                            <Logo />
-                            <ul className="logo"> 
-                                <li className="logo__item"><b>Краснолесья</b><span>14<em>к</em>5</span></li>
-                                <li className="logo__item">Товарищество собственников жилья</li>
-                            </ul>
-                        </NavLink>
+            <div className="header">
+                <div className="container">
+                    <div className="header__wrapper">
+                        <div className="header-logo-wrapper">
+                            <NavLink to="/" className="header-logo-link">
+                                <Logo />
+                                <ul className="logo"> 
+                                    <li className="logo__item"><b>Краснолесья</b><span>14<em>к</em>5</span></li>
+                                    <li className="logo__item">Товарищество собственников жилья</li>
+                                </ul>
+                            </NavLink>
+                        </div>
+                        <Navbar />
                     </div>
-                    <Navbar />
                 </div>
             </div>
         </header>

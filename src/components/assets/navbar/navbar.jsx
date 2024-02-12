@@ -31,7 +31,7 @@ const Navbar = () => {
                         <li className="header-navbar__nav-list__item"><NavLink to="/about" className={ getActive }>О нас</NavLink></li>
                         <li className="header-navbar__nav-list__item"><NavLink to="/newslist" className={ getActive }>Новости</NavLink></li>
                         <li className="header-navbar__nav-list__item"><a href="#!" className="">Информация</a></li>
-                        <li className="header-navbar__nav-list__item"><a href="#!" className="">Контакты</a></li>
+                        <li className="header-navbar__nav-list__item"><NavLink to="/contacts" className={ getActive }>Контакты</NavLink></li>
                     </ul>
                 </div>
             </div>

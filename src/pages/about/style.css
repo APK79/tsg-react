@@ -16,7 +16,7 @@
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
-    margin: 0 0 1rem 0;
+    margin: 1rem 0;
 }
 .about__img-wrapper div.about__img-wrapper__title {
     display: flex;
@@ -56,27 +56,27 @@ ul.about-content__list li{
 ul.about-content__list li::marker {
     color: var(--accent);
 }
-.about-people-wrapper {
+div.about-people .people__wrapper {
     display: flex;
     justify-content: space-around;
     padding: 3rem 0;
     text-align: center;
 }
-.about-people__item__img-wrapper svg {
+div.about-people .people__item__img-wrapper svg {
     fill: var(--light-dark);
     width: 15rem;
     aspect-ratio: 1/1;
 }
-.about-people__item__title {
+div.about-people .people__item__title {
     font-size: 1.5rem;
     padding: 1rem 0;
     line-height: 3rem;
     letter-spacing: 0.05rem;
 }
-.about-people__item__title__company-post {
+div.about-people .people__item__title__company-post {
     font-weight: 700;
 }
-.about-people__item__title__work-time {
+div.about-people .people__item__title__work-time {
     font-size: 1.1rem;
     font-weight: 700;
     line-height: 1.5rem;
@@ -105,10 +105,10 @@ ul.about-content__list li::marker {
     }
 }
 @media screen and (max-width: 768px) {
-    .about-people-wrapper {
+    div.about-people .people__wrapper {
         flex-direction: column;
     }
-    .about-people__item__title {
+    div.about-people .people__item__title {
         padding: 1rem 0 5rem;
         line-height: 2.5rem;
     }

@@ -1,4 +1,12 @@
 header div.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    box-shadow: 0 0 5px var(--light-grey);
+    z-index: 100;
+}
+header div.header__wrapper{
     position: relative;
     min-height: 8rem;
     display: flex;
@@ -58,7 +66,7 @@ ul.logo li.logo__item:last-child{
 
 }
 @media screen and (max-width: 768px) {
-    header div.header {
+    header div.header__wrapper {
         min-height: 5rem;
     }
     div.header-logo-wrapper a.header-logo-link svg {
