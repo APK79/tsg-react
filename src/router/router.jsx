@@ -1,19 +1,21 @@
-import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration } from "react-router-dom";
+import { createBrowserRouter, Outlet, Link, RouterProvider, ScrollRestoration } from "react-router-dom";
 
 import Header from '../components/assets/header/header.jsx';
 import Footer from '../components/assets/footer/footer.jsx';
 import Main from '../pages/main/main.jsx';
 import About from '../pages/about/about.jsx';
 import NewsList from '../pages/news/newslist/newslist.jsx';
-import News from "../pages/news/news.jsx";
+import News from "../pages/news/newslist/news.jsx";
 import Contacts from "../pages/contacts/contacts.jsx";
 import ErrorPage from "../pages/errorpage/errorpage.jsx";
+import Breadcrumbs from "../components/breadcrumbs/breadcrumbs.jsx";
 
 const Router = () => {
 function Layout() {
   return (
     <div className="App">
         <Header />
+        <Breadcrumbs/>
         <Outlet />
         <Footer />
         <ScrollRestoration />
@@ -28,27 +30,41 @@ const router = createBrowserRouter([
     children: [  
       {
         path: '/',
-        element: <Main />
-      },
-      {
-        path: '/about',
-        element: <About />
-      },
-      {
-        path: '/newslist',
-        element: <NewsList />
-      },
-      {
-        path: '/news/:id',
-        element: <News />
-      },
-      {
-        path: '/contacts',
-        element: <Contacts />
-      }
-    ]
-  }
-])
+        element: <Outlet />,
+        handle: { crumb: () => <Link to="/">Главная</Link>},
+        children: [      
+          {
+            index: true,
+            element: <Main />,
+          },  
+        {
+          path: '/about',
+          element: <About />,
+          handle: { crumb: () => <span>О нас</span>} 
+        },
+        {
+          path: '/contacts',
+          element: <Contacts />,
+          handle: { crumb: () => <span>Контакты</span>} 
+        },
+        {
+          path: '/newslist',
+          element: <Outlet />,
+          handle: { crumb: () => <Link to="/NewsList">Новости</Link>},
+          children: [
+            {
+              index: true,
+              element: <NewsList />,
+            },
+            {
+            path: 'news/:id',
+            element: <News />,
+            handle: { crumb: () => <span>Новость</span>}   }]
+        }  ]
+        },
+      ]
+    }
+  ])
 
 return <RouterProvider router={router} />
 }

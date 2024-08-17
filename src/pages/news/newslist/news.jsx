@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from "react-router-dom";
-import getList from "../../data/news.json";
-import ErrorPage from "../errorpage/errorpage.jsx";
+import getList from "../../../data/news.json";
+import ErrorPage from "../../errorpage/errorpage.jsx";
 import "./style.css";
 
 

@@ -128,14 +128,6 @@ const Main = () => {
                       <a href="#!" className="main-info__box-list__item__info-url"> </a>
                     </div>
                   </li>
-                  <li className="main-info__box-list__item">
-                    <div className="main-info__box-list__item__wrapper">
-                      <div className="main-info__box-list__item__info-img"></div>
-                      <div className="main-info__box-list__item__info-head">Услуги и мастера</div>
-                      <div className="main-info__box-list__item__info-desc">Список проверенных компаний по оказанию домовых услуг.</div>
-                      <a href="#!" className="main-info__box-list__item__info-url"> </a>
-                    </div>
-                  </li>
                 </ul>
               </div>
             </div>

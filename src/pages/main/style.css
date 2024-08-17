@@ -125,7 +125,7 @@ div.main-info-full-size{
 }
 ul.main-info__box-list{
     display: grid;
-    grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
     column-gap: 3rem;
     margin: 3rem 0;
 }
@@ -187,6 +187,9 @@ a.main-info__box-list__item__info-url {
 /* about home */
 div.main-about-home{
     position: relative;
+}
+div.about-home-full-size{
+    padding-bottom: 8rem;
 }
 div.main-about-home h3 {
     position: absolute;
